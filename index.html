@@ -30,7 +30,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
@@ -44,12 +44,27 @@
                 <a class="nav-link disabled" aria-disabled="true">Disabled</a>
               </li>
             </ul>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="avatar" role="button" data-bs-toggle="dropdown"></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#" id="botonsalir">Salir</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item mt-2">
+                <i class="bi bi-person-circle text-white fw-bold mt-5 fs-2"></i>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
     </header>
     <main>
-      <div class="banner"></div>
+      <div class="banner">
+        <iframe width="500px" height="500px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=_tQLPBERE02ODHwzuet1gQ-Gh02Na8pGsl3epcK-6iBUQVJSMFgzUEM2UEUzSzdVOFJJMFVOUkxMSS4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+      </div>
       <button class="btn btn-primary botonChat" id="botonChat" onclick="cambiarCaja()">
         Chatea con el tigre
       </button>
@@ -99,7 +114,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="./src/controllers/controlador.js"></script>
-    
+    <script src="./src/controllers/controlador.js" type="module"></script>
+    <script src="./src/controllers/controladorSalida.js" type="module"></script>
   </body>
 </html>
